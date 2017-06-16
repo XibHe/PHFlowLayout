@@ -15,6 +15,10 @@
 		47B3D0971EF036DE00BC443B /* PHFlowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B3D0961EF036DE00BC443B /* PHFlowLayoutTests.m */; };
 		47B3D0A21EF036DE00BC443B /* PHFlowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B3D0A11EF036DE00BC443B /* PHFlowLayoutUITests.m */; };
 		47B3D0B11EF038B500BC443B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B3D0B01EF038B500BC443B /* MainViewController.m */; };
+		47C0DDB91EF3BC930066A824 /* GridFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C0DDB81EF3BC930066A824 /* GridFlowLayout.m */; };
+		47C0DDBC1EF3C5E10066A824 /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C0DDBB1EF3C5E10066A824 /* GridViewController.m */; };
+		47C0DDC11EF3D1540066A824 /* GridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C0DDBF1EF3D1540066A824 /* GridCell.m */; };
+		47C0DDC21EF3D1540066A824 /* GridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C0DDC01EF3D1540066A824 /* GridCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		47B3D0A31EF036DE00BC443B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47B3D0AF1EF038B500BC443B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		47B3D0B01EF038B500BC443B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		47C0DDB71EF3BC930066A824 /* GridFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridFlowLayout.h; sourceTree = "<group>"; };
+		47C0DDB81EF3BC930066A824 /* GridFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridFlowLayout.m; sourceTree = "<group>"; };
+		47C0DDBA1EF3C5E10066A824 /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		47C0DDBB1EF3C5E10066A824 /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		47C0DDBE1EF3D1540066A824 /* GridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridCell.h; sourceTree = "<group>"; };
+		47C0DDBF1EF3D1540066A824 /* GridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridCell.m; sourceTree = "<group>"; };
+		47C0DDC01EF3D1540066A824 /* GridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,14 @@
 		47B3D07B1EF036DE00BC443B /* PHFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				47C0DDBD1EF3D1230066A824 /* Cell */,
+				47C0DDB61EF3BC4B0066A824 /* FlowLayout */,
 				47B3D07F1EF036DE00BC443B /* AppDelegate.h */,
 				47B3D0801EF036DE00BC443B /* AppDelegate.m */,
 				47B3D0AF1EF038B500BC443B /* MainViewController.h */,
 				47B3D0B01EF038B500BC443B /* MainViewController.m */,
+				47C0DDBA1EF3C5E10066A824 /* GridViewController.h */,
+				47C0DDBB1EF3C5E10066A824 /* GridViewController.m */,
 				47B3D0851EF036DE00BC443B /* Main.storyboard */,
 				47B3D0881EF036DE00BC443B /* Assets.xcassets */,
 				47B3D08A1EF036DE00BC443B /* LaunchScreen.storyboard */,
@@ -138,6 +153,25 @@
 				47B3D0A31EF036DE00BC443B /* Info.plist */,
 			);
 			path = PHFlowLayoutUITests;
+			sourceTree = "<group>";
+		};
+		47C0DDB61EF3BC4B0066A824 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				47C0DDB71EF3BC930066A824 /* GridFlowLayout.h */,
+				47C0DDB81EF3BC930066A824 /* GridFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		47C0DDBD1EF3D1230066A824 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				47C0DDBE1EF3D1540066A824 /* GridCell.h */,
+				47C0DDBF1EF3D1540066A824 /* GridCell.m */,
+				47C0DDC01EF3D1540066A824 /* GridCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +286,7 @@
 				47B3D08C1EF036DE00BC443B /* LaunchScreen.storyboard in Resources */,
 				47B3D0891EF036DE00BC443B /* Assets.xcassets in Resources */,
 				47B3D0871EF036DE00BC443B /* Main.storyboard in Resources */,
+				47C0DDC21EF3D1540066A824 /* GridCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B3D0811EF036DE00BC443B /* AppDelegate.m in Sources */,
+				47C0DDC11EF3D1540066A824 /* GridCell.m in Sources */,
 				47B3D0B11EF038B500BC443B /* MainViewController.m in Sources */,
+				47C0DDBC1EF3C5E10066A824 /* GridViewController.m in Sources */,
 				47B3D07E1EF036DE00BC443B /* main.m in Sources */,
+				47C0DDB91EF3BC930066A824 /* GridFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
