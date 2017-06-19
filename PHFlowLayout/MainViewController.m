@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "GridViewController.h"
 static NSString *cellIndentify = @"inforCell";
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -52,6 +53,9 @@ static NSString *cellIndentify = @"inforCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    GridViewController *gridVC = [[GridViewController alloc] init];
+    [self.navigationController pushViewController:gridVC animated:YES];
 }
 
 @end

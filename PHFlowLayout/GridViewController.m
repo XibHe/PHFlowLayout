@@ -24,6 +24,7 @@
     _listCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:gridFlowLauout];
     _listCollectionView.dataSource = self;
     _listCollectionView.delegate = self;
+    _listCollectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_listCollectionView];
     
     [_listCollectionView registerNib:[UINib nibWithNibName:@"GridCell" bundle:nil] forCellWithReuseIdentifier:[GridCell cellIdentifier]];

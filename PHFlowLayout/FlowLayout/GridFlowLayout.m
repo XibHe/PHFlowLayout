@@ -67,14 +67,13 @@
     return layoutAttributesArr;
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    return CGSizeMake(20, 40);
+//    if (indexPath.section == 0) {
+//        return CGSizeMake(80, 80);
+//    } else {
+//        return CGSizeMake(160, 160);
+//    }
 //}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return CGSizeMake(40, 50);
-}
 
 @end
